@@ -4,13 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML com CSS</title>
+    <style>
+        /*Comentário no CSS*/
+        /*ID's começam com #*/
+        p.loremipsum {
+            color: rgb(218, 83, 245);
+            font-weight: bolder;
+            text-align: center;
+            border: none;
+            box-shadow: 0.5em 0.5em 1em;
+            outline: 0;
+            border-radius: 50em;
+            width: 60em;
+            margin-left: 27em;
+            margin-top: 3em;
+        }
+
+        p#paragrafo1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: blue;
+            margin-left: 50em;
+            padding: 0.5em;
+            margin-top: 5em;
+            border-radius: 50em;
+            background-color: orange;
+            width: 15em;
+            box-shadow: 0em 0.3em 1em rgb(255, 190, 11);
+        }
+
+        p#paragrafo1:hover {
+            background-color: rgb(255, 153, 0);
+            cursor: progress;
+        }
+
+        p#paragrafo2 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: purple;
+            color: yellow;
+            box-shadow: none;
+            margin-left: 50em;
+            margin-top: 5em;
+            border-radius: 50em;
+            width: 15em;
+            box-shadow: 0em 0.3em 1em rgb(255, 112, 236);
+            padding: 0.5em;
+        }
+
+        p#paragrafo2:hover {
+            background-color: blueviolet;
+            cursor: progress;
+        }
+
+        /*As classes começam com . e são aplicadas somente quando declaradas na propriedae class da tag, porém, podendo ser repetida a vontade. */
+        .stripped {
+            background-color: rgb(112, 212, 243);
+            padding: 2em 1em;
+            margin-top: 4em;
+            border-radius: 25em;
+            width: 10em;
+            margin-left: 50em;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 0.5em 0.2em 1em rgb(0, 130, 190);
+        }
+
+        .semstripped {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(21, 169, 255);
+            padding: 2em 1em;
+            margin-top: 4em;
+            border-radius: 25em;
+            width: 10em;
+            margin-left: 50em;
+            text-align: center;
+            box-shadow: 0.5em 0.2em 1em rgb(45, 97, 240);
+        }
+
+        .semstripped:hover {
+            background-color: rgb(0, 123, 194);
+            cursor: pointer;
+        }
+
+        .stripped:hover {
+            background-color: rgb(5, 152, 197);
+            cursor: pointer;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            width: 40em;
+            height: 0.05em;
+            background-color: red;
+        }
+
+        div {
+            display: block;
+        }
+
+        div div {
+            margin-left: 20em;
+            margin-top: 20em;
+        }
+    </style>
 </head>
 
 <body>
     <h1 style="color: red;">Somente este H1 irá receber a formatação.</h1>
     <h1>Como não tenho style, fico na formatação padrão do navegador.</h1>
 
-    <h2 style="font-family: cursive; font-size: 20px; color: rgb(117, 154, 255); text-align: center;">Tenho várias formatações no inline.</h2> 
+    <h2 style="font-family: cursive; font-size: 20px; color: rgb(117, 154, 255); text-align: center;">Tenho várias
+        formatações no inline.</h2>
+    <hr>
+
+    <p class="loremipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, doloribus tempora? Voluptatibus,
+        cum fugit quas,
+        saepe quidem recusandae enim laborum deleniti eveniet non accusantium reiciendis maxime? Beatae aspernatur at
+        eveniet?</p>
+
+    <p id="paragrafo1">
+        Eu tenho um ID.
+    </p>
+
+    <p id="paragrafo2">
+        Eu tenho um segundo ID.
+    </p>
+
+    <ol>
+        <li class="stripped" type="a"><a href="">Item 1</a></li>
+        <li class="semstripped" type="a"><a href="">Item 2</a></li>
+        <li class="stripped" type="a"><a href="">Item 3</a></li>
+        <li class="semstripped" type="a"><a href="">Item 4</a></li>
+        <li class="stripped" type="a"><a href="">Item 5</a></li>
+    </ol>
+    <hr>
 
 </body>
 

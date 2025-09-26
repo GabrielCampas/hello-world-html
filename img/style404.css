@@ -1,0 +1,13 @@
+div.error1{
+    width: 35em;
+    text-align: center;
+    padding: 0.3em;
+    background-color: rgb(148, 148, 148);
+    border-radius: 50em;
+    margin-left: 40em;
+    margin-top: 10em;
+    box-shadow: 0.5em 0.5em 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-variant-caps: all-small-caps;
+}
